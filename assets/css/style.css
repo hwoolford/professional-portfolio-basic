@@ -49,14 +49,15 @@ main {
     align-items: flex-start;
     flex-wrap: wrap;
     margin: 1% auto;
-    padding: 40px;
-    width: 80%;
+    padding: 10px;
+    width: 90%;
 }
 
-.float-left {
-    float: left;
-    margin-right: 2%;
+.float-right {
+    float: right;
     padding: 10px;
+    height: auto;
+    max-width: 50%;
 }
 
 h2 {
@@ -66,7 +67,38 @@ h2 {
     font-weight: bold;
 }
 
+.aside {
+    float: left;
+    margin-bottom: 7.5%;
+}
+
 p {
     font-size: 1.25em;
     line-height: 150%;
+    padding: 10px;
+    margin-left: 15%;
+}
+
+.about {
+    margin-bottom: 7.5%;
+    margin-top: 3%;
+}
+
+.projects{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px;
+    margin-bottom: 7.5%;
+    margin-top: 3%;
+}
+
+.projects img {
+    flex: 1 0 0;
+    flex-wrap: wrap;
+    padding: 20px;
+    justify-content: center;
+    width: 100%;
+    height: auto;
+    margin-left: 5%;
+    margin-bottom: 7.5%;
 }
