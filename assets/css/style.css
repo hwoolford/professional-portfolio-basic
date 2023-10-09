@@ -102,3 +102,9 @@ p {
     margin-left: 5%;
     margin-bottom: 7.5%;
 }
+
+footer {
+    padding: 20px;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
