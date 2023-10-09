@@ -84,7 +84,7 @@ p {
     margin-top: 3%;
 }
 
-.projects{
+.projects {
     display: flex;
     flex-wrap: wrap;
     padding: 20px;
@@ -109,10 +109,12 @@ p {
 }
 
 .contact a {
+    display: flex;
     font-size: 1.25em;
-    padding: 10px 20px;
+    padding: 10px;
     margin-left: 15%;
     margin-top: 3%;
+    text-decoration: none;
 }
 
 footer {
@@ -124,4 +126,22 @@ footer {
 h3 {
     font-weight: normal;
     font-size: 1em;
+}
+
+@media screen and (max-width: 992px) {
+    .projects {
+        width: 50%;;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .projects {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .contact {
+        flex-direction: column;
+    }
 }
