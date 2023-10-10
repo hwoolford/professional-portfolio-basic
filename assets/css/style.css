@@ -55,6 +55,8 @@ main {
     width: 90%;
 }
 
+/* About Me section */
+
 .about-container {
     display: flex;
     flex-wrap: wrap;
@@ -85,6 +87,8 @@ p {
     padding: 10px;
 }
 
+/* Projects section */
+
 .project-container {
     display: flex;
     flex-wrap: wrap;
@@ -111,6 +115,8 @@ p {
     box-shadow: inset 0px 0px 4px rgb(7, 128, 150), 0 0 10px rgb(7, 128, 150)
 }
 
+/* Contact Me section */
+
 .contact-container {
     display: flex;
     flex-wrap: wrap;
@@ -134,6 +140,8 @@ p {
     color: #078196;
 }
 
+/* footer section */
+
 footer {
     padding: 20px;
     text-align: center;
@@ -146,11 +154,15 @@ h3 {
     font-size: 1em;
 }
 
+/* Media Queries for tablet */
+
 @media screen and (max-width: 992px) {
     .projects {
         width: 50%;;
     }
 }
+
+/* Media Queries for cell phone */
 
 @media screen and (max-width: 768px) {
     .projects {
