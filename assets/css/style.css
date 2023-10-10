@@ -96,18 +96,54 @@ p {
 }
 
 .projects {
-    padding: 20px;
+    position: relative;
     flex-direction: row;
+    display: inline-block;
 }
 
 .p1 {
     max-width: 400px;
     height: auto;
+    padding: 20px;
+}
+
+.project-1 {
+    position: absolute;
+    bottom: 5%;
+    left: 25%;
+    background: rgb(0,0,0);
+    background: rgba(0, 0, 0, 0.65);
+    color: #fff;
+    padding: 10px;
+    font-weight: bold;
 }
 
 .p2 {
     max-width: 288px;
     height: auto;
+    padding: 20px;
+}
+
+.project-2 {
+    position: absolute;
+    bottom: 57%;
+    left: 12%;
+    background: rgb(0,0,0);
+    background: rgba(0, 0, 0, 0.65);
+    color: #fff;
+    padding: 10px;
+    font-weight: bold;
+}
+
+.project-3 {
+    position: absolute;
+    bottom: 57%;
+    left: 25%;
+    background: rgb(0,0,0);
+    background: rgba(0, 0, 0, 0.65);
+    color: #fff;
+    padding: 10px;
+    font-weight: bold;
 }
 
 .projects img:hover {
