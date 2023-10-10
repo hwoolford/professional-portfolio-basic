@@ -43,25 +43,32 @@ nav a {
 }
 
 a:hover {
+    background-color: #fff;
     color: rgb(7, 128, 150);
 }
 
 /* Main Section */
 
 main {
-    display: flex;
-    align-items: flex-start;
-    flex-wrap: wrap;
     margin: 1% auto;
     padding: 10px;
     width: 90%;
 }
 
-.float-right {
-    float: right;
+.about-container {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin-bottom: 10%;
+}
+
+.about {
+    display: flex;
+}
+
+.headshot {
     padding: 10px;
-    height: auto;
-    max-width: 50%;
+    max-height: 200px;
 }
 
 h2 {
@@ -72,59 +79,59 @@ h2 {
     cursor: default;
 }
 
-.aside {
-    float: left;
-    margin-bottom: 7.5%;
-}
-
 p {
     font-size: 1.25em;
     line-height: 150%;
     padding: 10px;
-    margin-left: 15%;
 }
 
-.about {
-    margin-bottom: 7.5%;
-    margin-top: 3%;
+.project-container {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 10%;
 }
 
 .projects {
-    display: flex;
-    flex-wrap: wrap;
     padding: 20px;
-    margin-bottom: 7.5%;
-    margin-top: 3%;
+    flex-direction: row;
 }
 
-.projects img {
-    flex: 1 0 0;
-    flex-wrap: wrap;
-    padding: 20px;
-    justify-content: center;
-    width: 100%;
+.p1 {
+    max-width: 400px;
     height: auto;
-    margin-left: 5%;
-    margin-bottom: 7.5%;
+}
+
+.p2 {
+    max-width: 288px;
+    height: auto;
 }
 
 .projects img:hover {
-    border: rgb(7, 128, 150) solid 3px;
+    border: #000 solid 3px;
+    box-shadow: inset 0px 0px 4px rgb(7, 128, 150), 0 0 10px rgb(7, 128, 150)
 }
 
-.contact {
+.contact-container {
     display: flex;
+    flex-wrap: wrap;
     margin-bottom: 7.5%;
 }
 
+.contact {
+    margin-left: 2%;
+}
+
 .contact a {
-    display: flex;
     font-size: 1.25em;
-    padding: 10px;
-    margin-left: 15%;
-    margin-top: 3%;
     text-decoration: none;
+    padding: 30px 20px;
     display: inline-block;
+    font-weight: bold;
+    color: #000;
+}
+
+.contact a:hover {
+    color: #078196;
 }
 
 footer {
@@ -150,9 +157,6 @@ h3 {
         width: 100%;
     }
 }
-
-@media screen and (max-width: 768px) {
     .contact {
         flex-direction: column;
     }
-}
