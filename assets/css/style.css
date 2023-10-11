@@ -112,7 +112,7 @@ p {
     bottom: 5%;
     left: 25%;
     background: rgb(0,0,0);
-    background: rgba(0, 0, 0, 0.65);
+    background: rgba(0, 0, 0, 0.6);
     color: #fff;
     padding: 10px;
     font-weight: bold;
@@ -164,7 +164,6 @@ p {
 }
 
 .contact a {
-    font-size: 1.25em;
     text-decoration: none;
     padding: 30px 20px;
     display: inline-block;
