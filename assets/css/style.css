@@ -41,7 +41,7 @@ nav a {
     text-decoration: none;
     padding: 15px 30px;
     display: inline-block;
-    font-weight: 600;
+    font-weight: 500;
 }
 
 nav a:hover {
@@ -233,7 +233,12 @@ h3 {
     #about-right {
         order: 2
     }
-}
+
     .contact {
         flex-direction: column;
     }
+
+    .left-sidebar {
+        flex: 0 0 100px;
+    }
+}
