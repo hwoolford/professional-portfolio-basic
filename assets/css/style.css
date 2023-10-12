@@ -41,12 +41,13 @@ nav a {
     text-decoration: none;
     padding: 15px 30px;
     display: inline-block;
-    font-weight: bold;
+    font-weight: 600;
 }
 
 nav a:hover {
     background-color: #fff;
     color: rgb(7, 128, 150);
+    font-weight: 1000;
 }
 
 /* Main Section */
@@ -64,10 +65,9 @@ main {
 .about-container {
     display: flex;
     flex-wrap: wrap;
-    margin-top: 2%;
+    margin-top: 3%;
     margin-bottom: 5%;
     justify-content: space-evenly;
-    padding: 50px 0;
 }
 
 .left-sidebar {
@@ -94,7 +94,7 @@ p {
 }
 
 .right-sidebar {
-flex: 0 1 100px;
+    flex: 0 1 100px;
 }
 
 .headshot {
@@ -186,7 +186,7 @@ flex: 0 1 100px;
 
 .contact a:hover {
     color: #078196;
-    font-weight: 1000;
+    font-weight: bold;
 }
 
 /* footer section */
@@ -216,6 +216,22 @@ h3 {
 @media screen and (max-width: 768px) {
     .projects {
         width: 100%;
+    }
+
+    .about-container {
+        flex-direction: column;
+    }
+
+    #about-left {
+        order: 1;
+    }
+
+    #about-middle {
+        order: 3;
+    }
+
+    #about-right {
+        order: 2
     }
 }
     .contact {
