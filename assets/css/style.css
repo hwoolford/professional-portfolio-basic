@@ -113,7 +113,6 @@ p {
 
 .projects {
     display: flex;
-    flex-wrap: wrap;
     width: 100%;
     justify-content: center;
     margin-left: 50px;
