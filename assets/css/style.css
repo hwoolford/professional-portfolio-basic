@@ -99,10 +99,9 @@ p {
 }
 
 .headshot {
-    padding-right: 50px;
     max-height: 200px;
     float: left;
-    margin-left: 50px;
+    padding: 20px 50px;
 }
 
 /* Projects section */
