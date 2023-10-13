@@ -113,6 +113,7 @@ p {
 
 .projects {
     display: flex;
+    flex-wrap: wrap;
     width: 100%;
     justify-content: center;
     margin-left: 50px;
@@ -214,21 +215,21 @@ h3 {
 
 @media screen and (max-width: 992px) {
    .about-container {
-    flex-direction: column;
-    align-items: center;
+        flex-direction: column;
+        align-items: center;
    } 
 
    .left-sidebar {
-    flex: 0 0 100px;
+        flex: 0 0 100px;
 }
 
    .main-about p {
-    text-align: justify;
+        text-align: justify;
    }
 
    .project-container {
-    flex-direction: column;
-    align-items: center;
+        flex-direction: column;
+        align-items: center;
    }
 
     .projects {
@@ -252,7 +253,7 @@ h3 {
 
 /* Media Queries for cell phone */
 
-@media screen and (max-width: 350px) {
+@media screen and (max-width: 480px) {
     .projects {
         width: 100%;
         align-items: center;
