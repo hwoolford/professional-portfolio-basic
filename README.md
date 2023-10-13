@@ -6,7 +6,10 @@ This project is a responsive professional portfolio webpage utilizing HTML and C
 
 ### Visuals
 
-blah blah
+View of the webpage on a desktop computer and cell phone
+![Desktop view of the webpage](./assets/images/website-screenshot.png "Webpage screenshot - Desktop view")
+
+![Cell phone view of the webpage](./assets/images/website-screenshot-cell.png "Webpage screenshot - cell phone view")
 
 ### Installation
 
