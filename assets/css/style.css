@@ -11,7 +11,6 @@ body {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     margin: 0;
     min-height: 100vh;
-    justify-content: flex-start;
     background-color: #f1f1f1;
   }
 
@@ -20,7 +19,7 @@ body {
 header {
     padding: 45px;
     background-color: rgb(7, 128, 150);
-    color: #fff;
+    color: #f1f1f1;
     font-size: 2em;
     text-align: center;
     width: 100%;
@@ -60,6 +59,12 @@ main {
     width: 90%;
 }
 
+.vl {
+    border-left: 8px solid #078196;
+    border-radius: 5px;
+    min-height: 100%;
+  }
+
 /* About Me section */
 
 .about-container {
@@ -90,16 +95,14 @@ h2 {
 p {
     font-size: 1.25em;
     line-height: 150%;
-    padding: 10px 0;
-}
-
-.right-sidebar {
-    flex: 0 1 100px;
+    padding: 10px;
 }
 
 .headshot {
-    padding: 10px;
+    padding-right: 50px;
     max-height: 200px;
+    float: left;
+    margin-left: 50px;
 }
 
 /* Projects section */
@@ -108,6 +111,7 @@ p {
     display: flex;
     flex-wrap: wrap;
     margin-bottom: 10%;
+    margin-top: 5%;
 }
 
 .projects {
@@ -196,18 +200,42 @@ footer {
     text-align: center;
     font-family: Arial, Helvetica, sans-serif;
     cursor: default;
+    background-color: #078196;
 }
 
 h3 {
-    font-weight: normal;
-    font-size: 1em;
+    font-size: 1.1em;
+    color: #fff;
+    font-weight: bold;
 }
 
 /* Media Queries for tablet */
 
 @media screen and (max-width: 992px) {
+   .about-container {
+    flex-direction: column;
+    align-items: center;
+   } 
+
+   .left-sidebar {
+    flex: 0 0 100px;
+}
+
+   .main-about p {
+    text-align: justify;
+   }
+
     .projects {
-        width: 50%;;
+        width: 50%;
+        align-items: center;
+    }
+
+    h2 {
+        text-align: center;
+    }
+
+    .vl {
+        display: none;
     }
 }
 
@@ -216,23 +244,17 @@ h3 {
 @media screen and (max-width: 768px) {
     .projects {
         width: 100%;
+        align-items: center;
     }
 
     .about-container {
         flex-direction: column;
+        align-items: center;
     }
 
-    #about-left {
-        order: 1;
-    }
-
-    #about-middle {
-        order: 3;
-    }
-
-    #about-right {
-        order: 2
-    }
+    .main-about p {
+        text-align: justify;
+       }
 
     .contact {
         flex-direction: column;
@@ -240,5 +262,13 @@ h3 {
 
     .left-sidebar {
         flex: 0 0 100px;
+    }
+
+    h2 {
+        text-align: center;
+    }
+
+    .vl {
+        display: none;
     }
 }
